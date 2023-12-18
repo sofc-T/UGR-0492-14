@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200;400&display=swap" rel="stylesheet">
+    <style>
+
+
+        .footer-content img {
+            width: 1.5rem; 
+            margin-right: 0.5rem;
+        }
+
+        #copy {
+            width: 1.5rem;
+            margin: 0; 
+        }
+
+        :root {
+            --main: aqua;
+            --lmain: rgb(102, 247, 247);
+            --comp: rgb(255, 102, 0);
+            --llmain: rgb(186, 246, 246);
+            --llcomp: rgb(251, 181, 135);
+            --lcomp: rgb(251, 140, 66);
+        }
+
+        .container p,
+        .places_eachpart p,
+        .eachskill,
+        .places_eachpart p,
+        h4,
+        h2,
+        nav a,
+        .footer-content li a {
+            color: var(--main);
+        }
+
+        .container p,
+        .places_eachpart p,
+        .eachskill,
+        .places_eachpart p,
+        h4,
+        h2 {
+            background-color: var(--llmain);
+            border-radius: 12px;
+            margin: 4px;
+            border: 2px solid var(--lcomp);
+        }
+
+        nav {
+            border-bottom: 4px solid var(--comp);
+        }
+
+        nav a:hover,
+        nav a:active,
+        .footer-content li a:hover,
+        .footer-content li a:active {
+            color: var(--comp);
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--llmain);
+            border-top: solid 0.2rem var(--comp);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a href="Homepage.html" class="navbar-item">
+                    <img id="logo" src="image/Logo.png" alt="Logo">
+                </a>
+                <p id="motto" class="navbar-item">The Design Alchemist</p>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <img id="menu" src="image/list.png" alt="menu-button">
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="Homepage.html" class="navbar-item">Home</a>
+                    <a href="Desings.html" class="navbar-item">Designs</a>
+                    <a href="Background.html" class="navbar-item">Background</a>
+                    <a href="About_me.html" class="navbar-item">About Me</a>
+                    <a href="Contact_me.html" class="navbar-item">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p> An insightful exploration of my esteemed educational background and refined skill set. With unwavering
+            commitment, a tireless pursuit of knowledge, and practical experiences, I have diligently built a strong
+            educational foundation and refined my skills.</p>
+    </div>
+
+    <main>
+        <h2 class="title is-2">Education Background</h2>
+        <div class="columns">
+            <div class="column">
+                <div class="places_eachpart">
+                    <p class="desc">Senior High School - Memhir Akalewold secondary and Preparatory school</p>
+                    <figure class="image is-3by2">
+                        <img src="image/office/akale.jfif" alt="office">
+                    </figure>
+                </div>
+            </div>
+            <div class="column">
+                <div class="places_eachpart">
+                    <p class="desc">Bachelor Degree - Addis Ababa Information Technology University</p>
+                    <figure class="image is-3by2">
+                        <img src="image/office/aau.jpg" alt="office">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title is-2">Technical and Educational Skills</h2>
+        <div class="columns">
+            <div class="column">
+                <div class="containe">
+                    <h4 class="title is-4">Technical Skills</h4>
+                </div><br>
+
+                <div class="eachskill">
+                    <p class="skillp">HTML, CSS, JS</p>
+                    <progress class="progress" value="93" max="100"></progress>
+                </div>
+                <div class="eachskill">
+                    <p class="skillp">Node. JS, PHP, Nested</p>
+                    <progress class="progress" value="54" max="100"></progress>
+                </div>
+                <div class="eachskill">
+                    <p class="skillp">React Native</p>
+                    <progress class="progress" value="76" max="100"></progress>
+                </div>
+                <div class="eachskill">
+                    <p class="skillp">Type Script</p>
+                    <progress class="progress" value="63" max="100"></progress>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="containe">
+                    <h4 class="title is-4">Soft Skills</h4>
+                </div><br>
+
+                <div class="eachskill">
+                    <p class="skillp">Communication and Teamwork</p>
+                    <progress class="progress" value="76" max="100"></progress>
+                </div>
+                <div class="eachskill">
+                    <p class="skillp">Critical Thinking</p>
+                    <progress class="progress" value="86" max="100"></progress>
+                </div>
+                <div class="eachskill">
+                    <p class="skillp">Decision Making</p>
+                    <progress class="progress" value="46" max="100"></progress>
+                </div>
+                <div class="eachskill">
+                    <p class="skillp">Organization and Time Management</p>
+                    <progress class="progress" value="66" max="100"></progress>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer portfolio-footer">
+        <div class="footercontainer">
+            <div class="footer-content">
+                <h3>Contact</h3>
+                <p>Email: Sofstzz@gmail.com</p>
+                <p>Phone: +251935573030</p>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Me</h3>
+                <ul class="social-links">
+                    <li><a href="https://t.me/sofstzz" target="_blank"><img class="drop" src="image/icons/teleg.png" alt="tg_icon" style="width: 1rem;"><i class="tg">@Sofstzz</i></a></li>
+                    <li><a href="https://twitter.com/abebegellaw" target="_blank"><i class="x"><img src="image/icons/x.png" alt="x-icon" style="width: 1rem;">@Sof</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="has-text-centered" id="copyp">
+            Copyright<img id="copy" src="image/icons/copyright.png" alt="copyright" style="width: 1rem;">2023 Reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>
+

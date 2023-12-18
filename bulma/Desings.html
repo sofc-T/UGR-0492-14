@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/Designs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            --main: aqua;
+            --lmain: rgb(102, 247, 247);
+            --comp: rgb(255, 102, 0);
+            --llmain: rgb(186, 246, 246);
+            --llcomp: rgb(251, 181, 135);
+            --lcomp: rgb(251, 140, 66);
+        }
+
+        img:hover {
+            border: 3px solid var(--comp);
+        }
+
+        button:hover {
+            border: 3px solid var(--main);
+        }
+
+        .container {
+            margin-top: 10rem;
+        }
+
+        h2 {
+            margin-bottom: 1.2rem;
+            font-size: 2rem;
+            margin-left: 3.2rem;
+        }
+
+        .container_designs {
+            margin-top: 50px;
+        }
+
+        .designEach button {
+            background: linear-gradient(to right, var(--main), var(--comp));
+        }
+
+        nav,
+        footer {
+            background-color: var(--llmain);
+            border-top: solid 0.2rem var(--comp);
+        }
+
+        nav p,
+        nav a,
+        .footer-content li a {
+            color: var(--main);
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a:active,
+        .footer-content li a:hover,
+        .footer-content li a:active {
+            color: var(--comp);
+            text-decoration: underline;
+        }
+
+        .container p {
+            padding: 0.4rem;
+            background-color: var(--llmain);
+            border-radius: 12px;
+            margin: 4px;
+            border: 2px solid var(--lcomp);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="Homepage.html">
+                    <img id="logo" src="image/Logo.png" alt="Logo">
+                </a>
+                <p class="navbar-item" id="motto">The Design Alchemist</p>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <img id="menu" src="image/list.png" alt="menu-button">
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="Homepage.html">Home</a>
+                    <a class="navbar-item" href="Desings.html">Designs</a>
+                    <a class="navbar-item" href="Background.html">Background</a>
+                    <a class="navbar-item" href="About_me.html">About me</a>
+                    <a class="navbar-item" href="Contact_me.html">Contact me</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Greetings again esteemed,</h2><br>
+            <p>I invite you to immerse yourselves in the realm of exquisite design.</p>
+        </div>
+        <div class="container_designs">
+            <div class="columns">
+                <div class="column">
+                    <div class="designEach">
+                        <img src="image/desing/d1.png" alt="D1">
+                        <button class="buy button">Buy</button>
+                    </div>
+                    <div class="designEach">
+                        <img src="image/desing/d2.png" alt="D2">
+                        <button class="buy button">Buy</button>
+                    </div>
+                    <div class="designEach">
+                        <img src="image/desing/d3.png" alt="D3">
+                        <button class="buy button">Buy</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="designEach">
+                        <img src="image/desing/d4.png" alt="D4">
+                        <button class="buy button">Buy</button>
+                    </div>
+                    <div class="designEach">
+                        <img src="image/desing/d5.png" alt="D5">
+                        <button class="free button">Free</button>
+                    </div>
+                    <div class="designEach">
+                        <img src="image/desing/d6.png" alt="D6">
+                        <button class="free button">Free</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <p>To initiate the acquisition process for the design that has captured your interest, get in touch with me.</p>
+    </div>
+
+
+<footer class="footer portfolio-footer">
+    <div class="footercontainer">
+        <div class="footer-content">
+            <h3>Contact</h3>
+            <p>Email: Sofstzz@gmail.com</p>
+            <p>Phone: +251935573030</p>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Me</h3>
+            <ul class="social-links">
+                <li>
+                    <a href="https://t.me/sofstzz" target="_blank">
+                        <img class="drop" src="image/icons/teleg.png" alt="tg_icon" style="width: 1rem;">
+                        <i class="tg">@Sofstzz</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/abebegellaw" target="_blank">
+                        <i class="x">
+                            <img src="image/icons/x.png" alt="x-icon" style="width: 1rem;">
+                            @Sof
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p class="has-text-centered" id="copyp">Copyright<img id="copy" src="image/icons/copyright.png" alt="copyright" style="width: 1rem;">2023 Reserved.</p>
+</footer>
+
+
+
+    
+    </body>
+    
+    </html>
+    
