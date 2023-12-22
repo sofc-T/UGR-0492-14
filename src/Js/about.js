@@ -3,25 +3,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     controlItems.forEach(function(controlItem) {
         controlItem.addEventListener('click', function() {
-            var allHiddenElements = document.querySelectorAll('.main_dropdowneach .hidden');
+            var allHiddenElements = document.querySelectorAll('.hiFiles');
+            
             allHiddenElements.forEach(function(hiddenElement) {
                 hiddenElement.style.display = 'none';
             });
 
-            var hiddenElement = controlItem.parentElement.querySelector('.hidden');
-            if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
-                hiddenElement.style.display = 'block';
+            var currentHiddenElement = controlItem.closest('.main_dropdowneach').querySelector('.hiFiles');
+            
+            if (currentHiddenElement.style.display === 'none' || currentHiddenElement.style.display === '') {
+                currentHiddenElement.style.display = 'flex';
             } else {
-                hiddenElement.style.display = 'none';
+                currentHiddenElement.style.display = 'none';
             }
         });
     });
 });
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var menuButton = document.getElementById('menu');
     var navLinks = document.querySelector('nav ul');
 
-    menuButton.addEventListener('click', function() {
+    menuButton.addEventListener('click', function(event) {
+        event.stopPropagation(); 
         if (navLinks.style.display === 'none' || navLinks.style.display === '') {
             navLinks.style.display = 'block';
         } else {
@@ -31,8 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.addEventListener('click', function(event) {
         var target = event.target;
-        if (target !== menuButton && !navLinks.contains(target)) {
+        var isSmallScreen = window.innerWidth < 768;
+
+        if (isSmallScreen && target !== menuButton && !navLinks.contains(target)) {
             navLinks.style.display = 'none';
         }
     });
 });
+
+
+
+

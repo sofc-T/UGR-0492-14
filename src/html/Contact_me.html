@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sof - The Desing Alchemist</title>
+        <!-- <link rel="stylesheet" href="../css/home.css"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200;400&display=swap" rel="stylesheet">
+        <script src="../Js/contact.js"></script>
+        <link rel="icon" type="image/x-icon" href="image/Logo.png">
+        <link rel="stylesheet" href="../dist/output.css">
+    </head>
+    <body>  
+        <header>
+            <nav class="bg-white flex md:fixed top-0 w-full justify-around border-b-4 border-comp z-7">
+                <figure>
+                    <a href="Homepage.html"><img class ="w-16 h-12 mt-8 md:w-36 border-none"id="logo" src="../image/Logo.png" alt="Logo"></a>
+                </figure>
+                <p id="motto" class="mt-16 text-8 md:12 items-center text-comp font-allura">The Design Alchemist</p>
+                <img id="menu" class="m-8 w-12 h-6 md:h-12 md:hidden" src="../image/list.png" alt="menu-button">
+            <ul class="md:flex md:list-none md:gap-4 md:justify-end hidden md:mt-8 lg:flex lg:list-none lg:gap-4 lg:justify-end  lg:mt-8">
+                    <li><a class="text-main no-underline hover:text-comp hover:underline active:text-comp active:underline" href="Homepage.html">Home</a ></li>
+                    <li><a class="text-main no-underline hover:text-comp hover:underline active:text-comp active:underline"  href="Desings.html">Designs</a ></li>
+                    <li><a class="text-main no-underline hover:text-comp hover:underline active:text-comp active:underline"  href="Background.html">Background</a ></li>
+                    <li><a class="text-main no-underline hover:text-comp hover:underline active:text-comp active:underline"  href="About_me.html">About Me</a ></li>
+                    <li><a class="text-main no-underline hover:text-comp hover:underline active:text-comp active:underline"  href="Contact_me.html">Contact Me</a ></li>
+            </ul>
+            </nav>
+        </header> 
+        <main>
+            <div class="container m-2 mt-32 mr-2 bg-llmain rounded-lg p-4 border-2 border-lcomp"><p>Let's Connect! I'm thrilled that you're interested in getting in touch with me. Whether you have a question, a collaboration opportunity, or just want to say hello, I'm all ears!</p></div>
+                <div class="mail flex-col">
+                    <form class="m-8 text-center  "id="mailhere" action="mailto:sofstzz@gmail.com" method="POST" enctype="text/plain">
+                        <label for="message">Message:</label>
+                        <input class="border-2 border-black" id="message" name="message" placeholder="Enter your message" required>
+                        <input class="bg-gradient-to-r from-main to-comp"id="button" type="submit"  value="Send Email">
+                    </form>
+                </div>
+        </main>
+        <footer class="portfolio-footer bg-llmain mt-32 pt-8 mb-1.6 border-0.8 border-comp">
+            <div class="footercontainer flex justify-around list-none">
+                <div class="footer-content">
+                    <h3>Contact</h3>
+                    <p>Email: Sofstzz@gmail.com</p>
+                    <p>Phone: +251935573030</p>
+                </div>
+                <div class="footer-content">
+                    <h3>Follow Me</h3>
+                    <ul class="social-links list-none">
+                        <li><a href="https://t.me/sofstzz" target="_blank" class="flex"><img class="w-6 drop" src="../image/icons/teleg.png" alt="tg_icon"> <i class="tg">@Sofstzz</i></a></li>
+                        <li><a href="https://twitter.com/abebegellaw" target="_blank" class="flex"><img class="w-6" src="../image/icons/x.png" alt="x-icon"><i class="x">@Sof</i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="copyp" class="pb-4 text-center">Copyright<img class="w-4" id="copy" src="../image/icons/copyright.png" alt="copyright">2023 Reserved.</p>
+        </footer>
+    </body>
+
+</html>
