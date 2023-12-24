@@ -1,43 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sof - The Desing Alchemist</title>
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200;400&display=swap" rel="stylesheet">
-        <script src="Js/Home.js"></script>
-        <link rel="icon" type="image/x-icon" href="image/Logo.png">
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sof - The Desing Alchemist</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/Home.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200;400&display=swap"
+        rel="stylesheet">
+    <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="icon" type="image/x-icon" href="image/Logo.png">
+</head>
+
+<body class=" overflow-x-hidden overflow-y-auto">
     <header>
-        <nav>
-            <figure>
-                <a href="Homepage.html"><img id="logo" src="image/Logo.png" alt="Logo"></a>
-            </figure>
-            <p id="motto">The Design Alchemist</p>
-            <img id="menu" src="image/list.png" alt="menu-button">
-        <ul>
-                <li><a href="Homepage.html">Home</a ></li>
-                <li><a href="Desings.html">Designs</a ></li>
-                <li><a href="Background.html">Background</a ></li>
-                <li><a href="About_me.html">About Me</a ></li>
-                <li><a href="Contact_me.html">Contact Me</a ></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Homepage.html"><img id="logo" src="image/Logo.png" width="50px"
+                        height="20px" alt="Logo" class="img-fluid logo-icon">
+                    <span id="motto">The Design Alchemist</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Desings.html">Designs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Background.html">Background</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About_me.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact_me.html">Contact Me</a>
+                        </li>
+
+                    </ul>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <div class="intro">
-            <h3 id = "name" class="intro_name">Sofonyas Tizazu</h3>
+            <h3 id="name" class="intro_name">Sofonyas Tizazu</h3>
             <h4 class="intro_name">Frontend Developer</h4>
-            <p>Machine learning and cyber Security Ethusiast. Currently working as a frontend Intern at A2SV. <br>Bachelor of Science in Software Engineering from AAiT.</p>
+            <p>Machine learning and cyber Security Ethusiast. Currently working as a frontend Intern at A2SV.
+                <br>Bachelor of Science in Software Engineering from AAiT.
+            </p>
         </div>
-        <div class="slideshow">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/desing/d1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/desing/d2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/desing/d3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- <div class="slideshow">
             <img src="image/previous.png" alt="prev" class="slideshow_cont" id="cont1">
             <figure class="mid">
                 <a href="Desings.html">
@@ -52,79 +105,230 @@
                 </a>
             </figure>
             <img src="image/next.png" alt="next" class="slideshow_cont" id="cont2">
+        </div> -->
+
+        <div class="butt">
+            <a href="Desings.html"><button id="check">Check Out More Designs</button></a>
         </div>
-        
-            <div class="butt">
-            <a href="Desings.html"><button id="check">Check Out More Designs</button></a ></div>
-        </main>
-        <section class="preview">
-            <h2>A short Background</h2>
-            <figure class="cont">
-                
-                <aside><p>Served as a junior developer at Google - a multinational technology company specializing in internet-related services and products. Google offers a wide range of products and services, including online advertising technologies, and more.</p></aside>
-                <div class="con">
-                <img src="image/office/o1.webp" alt="Workplace1">
-                <img src="image/office/o2.png" alt="Workplace2">
-                </div>
-                <aside><p>Served as a head at A2SV - Africa to Silicon Valley (A2SV) is an initiative that aims to bridge the gap between African entrepreneurs and the thriving tech ecosystem of Silicon Valley. It provides opportunities for African startups to connect with investors, mentors, and industry experts in Silicon Valley.</p></aside>
-            </figure>
-        </section>
-        <div class="designs">
-            <h2>Check Some of my Works</h2>
-            <figure class = "des">
-                <div class="designEach">
+    </main>
+    <section class="preview">
+        <h2>A short Background</h2>
+        <figure class="cont">
+
+            <aside>
+                <p>Served as a junior developer at Google - a multinational technology company specializing in
+                    internet-related services and products. Google offers a wide range of products and services,
+                    including online advertising technologies, and more.</p>
+            </aside>
+            <div class="con d-flex p-2 bd-highlight">
+                <img src="image/office/o1.webp" width="140rem" ;alt="Workplace1">
+                <img src="image/office/o2.png" width="140rem" alt="Workplace2">
+            </div>
+            <aside>
+                <p>Served as a head at A2SV - Africa to Silicon Valley (A2SV) is an initiative that aims to bridge the
+                    gap between African entrepreneurs and the thriving tech ecosystem of Silicon Valley. It provides
+                    opportunities for African startups to connect with investors, mentors, and industry experts in
+                    Silicon Valley.</p>
+            </aside>
+        </figure>
+    </section>
+    <div class="designs">
+        <h2>Check Some of my Works</h2>
+        <!-- <figure class="d-flex grid col-3 p-2 bd-highlight">
+            <div class="designEach">
                 <a href="Desings.html"><img src="image/desing/d6.png" alt="D1"></a>
-                    <button class="buy">Buy</button>
-                </div>
-                <div class="designEach">
-                    <a href="Desings.html"><img src="image/desing/d5.png" alt="D1"></a>
-                    <button class="free">Free</button>
-                </div>
-                <div class="designEach">
-                    <a href="Desings.html"><img src="image/desing/d1.png" alt="D1"></a>
-                    <button class="free">Free</button>
-                </div>
-                <div class="designEach">
+                <button class="buy">Buy</button>
+            </div>
+            <div class="designEach">
+                <a href="Desings.html"><img src="image/desing/d5.png" alt="D1"></a>
+                <button class="free">Free</button>
+            </div>
+            <div class="designEach">
+                <a href="Desings.html"><img src="image/desing/d1.png" alt="D1"></a>
+                <button class="free">Free</button>
+            </div>
+            <div class="designEach">
+                <a href="Desings.html"><img src="image/desing/d2.png" alt="D1"></a>
+                <button class="buy">Buy</button>
+            </div>
+        </figure> -->
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="card">
+                <div class="card-body">
                     <a href="Desings.html"><img src="image/desing/d2.png" alt="D1"></a>
                     <button class="buy">Buy</button>
                 </div>
-            </figure>
+            </div>
         </div>
-        <section class="testimonials">
-            <h2>What others say about me:</h2>
-            <figure class="testimonials_tests">
-                <div class="testimonials_testimonials_tests-each">
-                    <div class="head"><img src="image/test/p2.webp" alt="t1"><i>- Emre Varol, CEO of A2SV</i></div>
-                    <p>Working with Sofonyas was an absolute pleasure. Their professionalism, attention to detail, and exceptional problem-solving skills made a significant impact on our project. They consistently delivered high-quality results and exceeded our expectations. I highly recommend Sofonyas for any challenging task or project." </p>
+        <div class="col-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <a href="Desings.html"><img src="image/desing/d5.png" alt="D1"></a>
+                    <button class="free">Free</button>
                 </div>
-                <div class="testimonials_testimonials_tests-each">
-                    <div class="head"><img src="image/test/p3.jfif" alt="t2"><i>- Tasew Weldehana, President of AAU</i></div>
-                    <p>I had the privilege of collaborating with Sofonyas on a creative project, and I was thoroughly impressed. Their innovative thinking, artistic flair, and ability to translate ideas into captivating visuals were outstanding. Sofonyas is a talented individual with a keen eye for detail and a true passion for their craft." </p>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <a href="Desings.html"><img src="image/desing/d3.png" alt="D1"></a>
+                    <button class="free">Free</button>
                 </div>
-                <div class="testimonials_testimonials_tests-each">
-                    <div class="head"><img src="image/test/p1.jfif" alt="t3"><i>- Kinfemichael Tariku, Colleague</i></div>
-                    <p>Sofonyas is an exceptional team player with a natural ability to inspire and motivate others. Their positive attitude and genuine passion for their work are contagious. I've witnessed firsthand how they consistently go above and beyond to ensure project success, making them an invaluable asset to any team." </p>
+            </div>
+        </div>
+        <div class="col-md-2 col-lg-2">
+            <div class="card">
+                <div class="card-body">
+                    <a href="Desings.html"><img src="image/desing/d4.png" alt="D1"></a>
+                    <button class="buy">Buy</button>
                 </div>
-            </figure>
-        </section>
-        <footer class="portfolio-footer">
-            <div class="footercontainer">
-              <div class="footer-content">
+            </div>
+        </div>
+    </div>
+    <!-- <section class="testimonials">
+        <h2>What others say about me:</h2>
+        <figure class="testimonials_tests">
+            <div class="testimonials_testimonials_tests-each">
+                <div class="head"><img src="image/test/p2.webp" alt="t1"><i>- Emre Varol, CEO of A2SV</i></div>
+                <p>Working with Sofonyas was an absolute pleasure. Their professionalism, attention to detail, and
+                    exceptional problem-solving skills made a significant impact on our project. They consistently
+                    delivered high-quality results and exceeded our expectations. I highly recommend Sofonyas for any
+                    challenging task or project." </p>
+            </div>
+            <div class="testimonials_testimonials_tests-each">
+                <div class="head"><img src="image/test/p3.jfif" alt="t2"><i>- Tasew Weldehana, President of AAU</i>
+                </div>
+                <p>I had the privilege of collaborating with Sofonyas on a creative project, and I was thoroughly
+                    impressed. Their innovative thinking, artistic flair, and ability to translate ideas into
+                    captivating visuals were outstanding. Sofonyas is a talented individual with a keen eye for detail
+                    and a true passion for their craft." </p>
+            </div>
+            <div class="testimonials_testimonials_tests-each">
+                <div class="head"><img src="image/test/p1.jfif" alt="t3"><i>- Kinfemichael Tariku, Colleague</i></div>
+                <p>Sofonyas is an exceptional team player with a natural ability to inspire and motivate others. Their
+                    positive attitude and genuine passion for their work are contagious. I've witnessed firsthand how
+                    they consistently go above and beyond to ensure project success, making them an invaluable asset to
+                    any team." </p>
+            </div>
+        </figure>
+    </section> -->
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="head"><img src="image/test/p1.jfif" alt="t3" width="30rem"><i>- Kinfemichael Tariku,
+                            Colleague</i></div>
+                    <p>Working with Sofonyas was an absolute pleasure. Their professionalism, attention to detail, and
+                        exceptional problem-solving skills made a significant impact on our project. They consistently
+                        delivered high-quality results and exceeded our expectations. I highly recommend Sofonyas for
+                        any
+                        challenging task or project." </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="head"><img src="image/test/p3.jfif" alt="t2" width="30rem"><i>- Tasew Weldehana,
+                            President of AAU</i>
+                    </div>
+                    <p>I had the privilege of collaborating with Sofonyas on a creative project, and I was thoroughly
+                        impressed. Their innovative thinking, artistic flair, and ability to translate ideas into
+                        captivating visuals were outstanding. Sofonyas is a talented individual with a keen eye for
+                        detail
+                        and a true passion for their craft." </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="head"><img src="image/test/p3.jfif" alt="t1" width="30rem"><i>- Tasew Weldehana,
+                            President of AAU</i>
+                    </div>
+                    <p>I had the privilege of collaborating with Sofonyas on a creative project, and I was thoroughly
+                        impressed. Their innovative thinking, artistic flair, and ability to translate ideas into
+                        captivating visuals were outstanding. Sofonyas is a talented individual with a keen eye for
+                        detail
+                        and a true passion for their craft." </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><p>Email:Sofstzz@gmail.com</p>
+                        <i class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><p>Phone:+251935573030</p><i class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/abebegellaw" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"><a href="https://twitter.com/abebegellaw" target="_blank"><i class="x"><img
+                            width="30rem" src="image/icons/x.png" alt="x-icon">@Sof</i></a></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://t.me/sofstzz" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-github"></i><a href="https://t.me/sofstzz" target="_blank"><img clas="drop" src="image/icons/teleg.png"
+                            width="30rem" alt="tg_icon"> <i class="tg">@Sofstzz</i></a></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/"></a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+    <!-- <footer class="portfolio-footer">
+        <div class="footercontainer">
+            <div class="footer-content">
                 <h3>Contact</h3>
                 <p>Email:Sofstzz@gmail.com</p>
                 <p>Phone:+251935573030</p>
-              </div>
-              <div class="footer-content">
+            </div>
+            <div class="footer-content">
                 <h3>Follow Me</h3>
                 <ul class="social-links">
-                  <li><a href="https://t.me/sofstzz" target="_blank"><img clas="drop" src="image/icons/teleg.png" alt="tg_icon"> <i class="tg">@Sofstzz</i></a ></li>
-                  <li><a href= "https://twitter.com/abebegellaw" target="_blank"><i class="x"><img src = "image/icons/x.png" alt="x-icon">@Sof</i></a></li>
+                    <li><a href="https://t.me/sofstzz" target="_blank"><img clas="drop" src="image/icons/teleg.png"
+                                alt="tg_icon"> <i class="tg">@Sofstzz</i></a></li>
+                    <li><a href="https://twitter.com/abebegellaw" target="_blank"><i class="x"><img
+                                    src="image/icons/x.png" alt="x-icon">@Sof</i></a></li>
                 </ul>
-              </div>
             </div>
-            <p id="copyp">Copyright<img id="copy" src="image/icons/copyright.png" alt="copyright">2023 Reserved.</p>
-        </footer>
-    </body>
+        </div>
 
-    
+        <p id="copyp">Copyright<img id="copy" src="image/icons/copyright.png" alt="copyright">
+            2023
+
+            Reserved.</p>
+    </footer> -->
+</body>
+
+
 </html>
